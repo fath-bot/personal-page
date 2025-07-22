@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-black text-white shadow-md fixed w-full top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold"><a href="#home" class="hover:text-blue-400">Fath Aulia Muhammad</a></h1>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="relative h-screen flex items-center justify-center text-white pt-20">
+    <div class="absolute inset-0 bg-cover bg-center brightness-50" style="background-image: url('back.jpg');"></div>
+    <div class="relative text-center z-10">
+      <img src="poto.jpg" alt="Foto Profil" class="w-36 h-36 rounded-full mx-auto mb-6 border-2 border-white shadow-lg" />
+      <h2 class="text-4xl font-bold mb-4">Hello, I'm Fath</h2>
+      <p class="text-xl">Frontend Developer | Cybersecurity Enthusiast</p>
+
+      <!-- Social Icons -->
+      <div class="mt-6 flex justify-center space-x-6">
+        <a href="https://github.com/fath-bot" target="_blank" class="text-white hover:text-gray-300 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.207 11.36.6.113.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.808 1.304 3.495.996.107-.775.42-1.305.763-1.605-2.665-.305-5.467-1.335-5.467-5.932 0-1.31.47-2.38 1.236-3.22-.124-.304-.535-1.53.117-3.19 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.552 3.297-1.23 3.297-1.23.653 1.66.242 2.886.118 3.19.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.92.43.37.823 1.102.823 2.22 0 1.606-.015 2.902-.015 3.296 0 .32.19.694.8.576C20.565 22.266 24 17.79 24 12.5 24 5.87 18.63 0.5 12 0.5z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/Fathaulia/" target="_blank" class="text-white hover:text-gray-300 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 5 3.88 6 2.49 6S0 5 0 3.5 1.09 1 2.48 1c1.38 0 2.5 1 2.5 2.5zM.5 8.5h4v13h-4v-13zm7.5 0h3.8v1.8h.06c.53-1 1.8-2.06 3.7-2.06 3.95 0 4.7 2.55 4.7 5.85v7.4h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.5 1.72-2.5 3.5v6.7h-4v-13z"/>
+          </svg>
+        </a>
+        <a href="mailto:fath.aul47@gmail.com" class="text-white hover:text-gray-300 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 3.4L12 13 5 7.4V6l7 5 7-5v1.4z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Icon -->
+    <a href="#about" class="absolute bottom-8 z-10 flex flex-col items-center animate-bounce text-white opacity-70 hover:opacity-100 transition">
+      <span class="text-sm mb-1">Scroll for More</span>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10 text-white">About Me</h3>
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <img src="poto.jpg" alt="About Image" class="w-48 h-48 rounded-xl shadow-md object-cover hidden md:block" />
+        <div class="text-center md:text-left">
+          <p class="text-gray-300 text-lg leading-relaxed">
+            Saya adalah seorang <strong>Web Developer</strong> dan <strong>Cybersecurity Enthusiast</strong> yang memiliki minat besar dalam membangun antarmuka web interaktif sekaligus menjaga keamanannya.
+          </p>
+          <p class="text-gray-300 mt-4 text-lg leading-relaxed">
+            Saat ini saya aktif mengembangkan aplikasi web menggunakan teknologi seperti React dan Node.js, serta mengikuti platform seperti TryHackMe dan Hack The Box.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10 text-white">My Skills</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 shadow-md rounded-xl p-6">
+          <h4 class="text-2xl font-semibold text-blue-400 mb-4">Web Development</h4>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">HTML</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">CSS</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">Laravel</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">Tailwind</span>
+            <span class="bg-blue-900 text-blue-200 px-4 py-2 rounded-full text-sm font-medium">Figma</span>
+          </div>
+        </div>
+        <div class="bg-gray-800 shadow-md rounded-xl p-6">
+          <h4 class="text-2xl font-semibold text-red-400 mb-4">Cyber Security</h4>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-red-900 text-red-200 px-4 py-2 rounded-full text-sm font-medium">Nmap</span>
+            <span class="bg-red-900 text-red-200 px-4 py-2 rounded-full text-sm font-medium">Burp Suite</span>
+            <span class="bg-red-900 text-red-200 px-4 py-2 rounded-full text-sm font-medium">Metasploit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h3 class="text-3xl font-bold text-white">My Projects</h3>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Project 1 - SOLAW -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-2 text-white">SOLAW</h4>
+        <p class="text-gray-400 mb-4">
+          Solution Of Law (SOLAW), adalah platform hukum yang dapat diakses dengan mudah dan .... blablabla.
+        </p>
+        <div class="flex items-center justify-between">
+          <span class="bg-blue-900 text-blue-200 px-4 py-1 rounded-full text-sm font-medium">
+            Laravel
+          </span>
+          <a 
+            href="https://github.com/agunglaksonoputra/solaw.git" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors duration-200"
+            aria-label="View SOLAW on GitHub"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.207 11.36.6.113.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.808 1.304 3.495.996.107-.775.42-1.305.763-1.605-2.665-.305-5.467-1.335-5.467-5.932 0-1.31.47-2.38 1.236-3.22-.124-.304-.535-1.53.117-3.19 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.552 3.297-1.23 3.297-1.23.653 1.66.242 2.886.118 3.19.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.92.43.37.823 1.102.823 2.22 0 1.606-.015 2.902-.015 3.296 0 .32.19.694.8.576C20.565 22.266 24 17.79 24 12.5 24 5.87 18.63 0.5 12 0.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 - SENADA -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-2 text-white">SENADA</h4>
+        <p class="text-gray-400 mb-4">
+          Seni Daerah dan Budaya, adalah aplikasi yang mempermudah orang-orang untuk lebih mengenal seni dan budaya yang ada pada Indonesia. Aplikasi ini juga membantu untuk merasakan langsung seni dan budaya yang ada di Indonesia.
+        </p>
+        <div class="flex items-center justify-between">
+          <span class="bg-blue-900 text-blue-200 px-4 py-1 rounded-full text-sm font-medium">
+            Flutter
+          </span>
+          <a 
+            href="https://github.com/agunglaksonoputra/senada-project.git" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors duration-200"
+            aria-label="View SENADA on GitHub"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.207 11.36.6.113.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.808 1.304 3.495.996.107-.775.42-1.305.763-1.605-2.665-.305-5.467-1.335-5.467-5.932 0-1.31.47-2.38 1.236-3.22-.124-.304-.535-1.53.117-3.19 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.552 3.297-1.23 3.297-1.23.653 1.66.242 2.886.118 3.19.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.92.43.37.823 1.102.823 2.22 0 1.606-.015 2.902-.015 3.296 0 .32.19.694.8.576C20.565 22.266 24 17.79 24 12.5 24 5.87 18.63 0.5 12 0.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-950">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6 text-white">Contact Me</h3>
+      <p class="text-gray-400 mb-4">infokontak</p><div class="mt-6 flex justify-center space-x-6">
+        <a href="https://github.com/fath-bot" target="_blank" class="text-white hover:text-gray-300 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.29 3.438 9.77 8.207 11.36.6.113.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.746.083-.731.083-.731 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.808 1.304 3.495.996.107-.775.42-1.305.763-1.605-2.665-.305-5.467-1.335-5.467-5.932 0-1.31.47-2.38 1.236-3.22-.124-.304-.535-1.53.117-3.19 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.552 3.297-1.23 3.297-1.23.653 1.66.242 2.886.118 3.19.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.92.43.37.823 1.102.823 2.22 0 1.606-.015 2.902-.015 3.296 0 .32.19.694.8.576C20.565 22.266 24 17.79 24 12.5 24 5.87 18.63 0.5 12 0.5z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/Fathaulia/" target="_blank" class="text-white hover:text-gray-300 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 5 3.88 6 2.49 6S0 5 0 3.5 1.09 1 2.48 1c1.38 0 2.5 1 2.5 2.5zM.5 8.5h4v13h-4v-13zm7.5 0h3.8v1.8h.06c.53-1 1.8-2.06 3.7-2.06 3.95 0 4.7 2.55 4.7 5.85v7.4h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.5 1.72-2.5 3.5v6.7h-4v-13z"/>
+          </svg>
+        </a>
+        <a href="mailto:fath.aul47@gmail.com" class="text-white hover:text-gray-300 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v 12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 3.4L12 13 5 7.4V6l7 5 7-5v1.4z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-6 text-center text-sm text-gray-500 border-t border-gray-700 mt-10">
+    © 2025 -. All rights reserved.
+  </footer>
+
+</body>
+</html>
