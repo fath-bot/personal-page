@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; Artikel Kesehatan — Pals Dental</title>
+  <meta name="description" content="Kumpulan artikel edukatif kesehatan gigi dari Pals Dental, dirangkum dari jurnal dan organisasi kesehatan terpercaya.">
+
+  <!-- Google Fonts: Poppins (judul) & Inter (isi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Crect%20x%3D%220%22%20y%3D%22-960%22%20width%3D%22960%22%20height%3D%22960%22%20rx%3D%22205%22%20fill%3D%22%232f6f9e%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M680-875q66%200%20113%2047t47%20113q0%2011-1.5%2029.5T834-643l-55%20403q-5%2038-34.5%2062T677-154q-23%200-42.5-10T602-192L495-348q-2-4-6.5-5.5T479-355q-4%200-16%209L359-195q-14%2020-34.5%2030.5T281-154q-38%200-67-24.5T180-241l-54-402q-3-24-4.5-42.5T120-715q0-66%2047-113t113-47q36%200%2057.5%209.5T379-845q20%2011%2042.5%2020.5T480-815q36%200%2058.5-9.5T581-845q20-11%2042-20.5t57-9.5Zm0%2080q-23%200-40.5%209.5T601-765q-21%2011-49%2020.5t-72%209.5q-44%200-72-9.5T359-765q-21-11-38.5-20.5T280-795q-33%200-56.5%2023.5T200-715q0%208%201%2023t4%2035l55%20405q1%208%207%2012.5t14%204.5q5%200%209-2t6-6l101-148q14-20%2036-32t47-12q25%200%2047%2012t36%2032l103%20151q2%203%205%204.5t7%201.5q8%200%2014.5-4.5T700-251l55-406q3-20%204-35t1-23q0-33-23.5-56.5T680-795ZM480-515Z%22/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap tema cepat agar tidak berkedip (light/dark) saat halaman dimuat -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('palsdental-theme');
+        if (saved) { document.documentElement.dataset.theme = saved; }
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Langsung ke konten</a>
+
+  <!-- ============================= HEADER & NAVIGASI ============================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="index.html" aria-label="Pals Dental — Beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 -960 960 960" fill="currentColor">
+            <path d="M680-875q66 0 113 47t47 113q0 11-1.5 29.5T834-643l-55 403q-5 38-34.5 62T677-154q-23 0-42.5-10T602-192L495-348q-2-4-6.5-5.5T479-355q-4 0-16 9L359-195q-14 20-34.5 30.5T281-154q-38 0-67-24.5T180-241l-54-402q-3-24-4.5-42.5T120-715q0-66 47-113t113-47q36 0 57.5 9.5T379-845q20 11 42.5 20.5T480-815q36 0 58.5-9.5T581-845q20-11 42-20.5t57-9.5Zm0 80q-23 0-40.5 9.5T601-765q-21 11-49 20.5t-72 9.5q-44 0-72-9.5T359-765q-21-11-38.5-20.5T280-795q-33 0-56.5 23.5T200-715q0 8 1 23t4 35l55 405q1 8 7 12.5t14 4.5q5 0 9-2t6-6l101-148q14-20 36-32t47-12q25 0 47 12t36 32l103 151q2 3 5 4.5t7 1.5q8 0 14.5-4.5T700-251l55-406q3-20 4-35t1-23q0-33-23.5-56.5T680-795ZM480-515Z"/>
+          </svg>
+        </span>
+        <span class="brand-text">Pals<span>Dental</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+          <li><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+          <li><a class="nav-link" href="index.html#dokter">Dokter</a></li>
+          <li><a class="nav-link" href="index.html#fasilitas">Fasilitas</a></li>
+          <li><a class="nav-link" href="blog.html" aria-current="page">Blog</a></li>
+          <li><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ubah mode terang/gelap">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm cta-btn" href="index.html#kontak">Buat Janji Temu</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="konten">
+    <!-- ============================= HERO BLOG ============================= -->
+    <section class="blog-hero">
+      <div class="container blog-hero-inner">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Blog &amp; Artikel Kesehatan</p>
+        <h1 class="blog-hero-title">Informasi kesehatan gigi berbasis ilmiah</h1>
+        <p class="blog-hero-sub">Artikel edukatif yang dirangkum dari jurnal dan organisasi kesehatan terpercaya — ditulis agar mudah dipahami, bukan sekadar basa-basi.</p>
+      </div>
+    </section>
+
+    <!-- ============================= DAFTAR ARTIKEL ============================= -->
+    <section class="section">
+      <div class="container blog-articles">
+
+        <!-- Artikel 1 -->
+        <article class="blog-article" id="menyikat-gigi">
+          <header class="art-head">
+            <span class="chip chip-outline">Kebersihan Mulut</span>
+            <h2 class="art-title">Pentingnya Menyikat Gigi dengan Teknik yang Benar</h2>
+            <p class="art-meta"><span>Diperbarui 12 Agustus 2026</span><span class="meta-sep">·</span><span>5 menit baca</span><span class="meta-sep">·</span><span>Tim Pals Dental</span></p>
+          </header>
+
+          <div class="art-body">
+            <p>Banyak orang menyikat gigi kurang dari dua menit atau menekan sikat terlalu kuat, yang justru dapat merusak enamel dan melukai gusi. Menyikat dengan posisi sikat 45 derajat ke arah gusi serta gerakan memutar yang lembut terbukti lebih efektif mengurangi plak. Lakukan dua kali sehari dengan sikat berbulu lembut sebagai langkah dasar menjaga kesehatan mulut.</p>
+
+            <h3 class="art-sub">Langkah menyikat gigi yang benar</h3>
+            <ul class="art-list">
+              <li><strong>Posisikan bulu sikat 45 derajat</strong> mengarah ke pertemuan gigi dan gusi, agar plak yang menempel di tepi gusi ikut terangkat.</li>
+              <li><strong>Gunakan gerakan memutar yang lembut</strong> pada dua hingga tiga gigi sekaligus, dan lakukan total sekitar dua menit.</li>
+              <li><strong>Jangkau semua permukaan gigi</strong> — luar, dalam, dan bidang kunyah — termasuk gigi paling belakang yang sering terlewat.</li>
+              <li><strong>Bersihkan lidah</strong> dengan permukaan khusus di bagian belakang sikat untuk mengurangi bakteri penyebab bau mulut.</li>
+            </ul>
+
+            <p>Banyak orang menekan sikat terlalu kuat karena mengira semakin keras semakin bersih. Faktanya, tekanan berlebih justru mengikis enamel dan membuat gusi menurun (resesi). Genggam sikat seperti memegang pensil, pilih bulu yang lembut, dan ganti sikat setiap tiga bulan atau begitu bulunya mulai mekar.</p>
+
+            <p>Lengkapi dengan pasta gigi berfluoride. Fluoride membantu enamel memperbaiki diri (remineralisasi) sejak dini dan secara signifikan menurunkan risiko gigi berlubang. Untuk sela gigi yang tidak terjangkau sikat, tambahkan benang gigi setidaknya sekali sehari.</p>
+
+            <p>Jika gusi mudah berdarah atau gigi terasa ngilu saat menyikat, jangan diabaikan — kunjungi dokter gigi untuk pemeriksaan lebih lanjut.</p>
+          </div>
+
+          <div class="blog-ref">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+            <span>Referensi: <strong>Journal of Dental Research</strong> — tinjauan efektivitas teknik menyikat terhadap kontrol plak.</span>
+          </div>
+        </article>
+
+        <!-- Artikel 2 -->
+        <article class="blog-article" id="gigi-jantung">
+          <header class="art-head">
+            <span class="chip chip-outline">Kesehatan Umum</span>
+            <h2 class="art-title">Hubungan Kesehatan Gigi dengan Kesehatan Jantung</h2>
+            <p class="art-meta"><span>Diperbarui 26 Juli 2026</span><span class="meta-sep">·</span><span>6 menit baca</span><span class="meta-sep">·</span><span>Tim Pals Dental</span></p>
+          </header>
+
+          <div class="art-body">
+            <p>Penyakit gusi (periodontitis) merupakan peradangan kronis yang, bila dibiarkan, dapat ikut memicu peradangan di seluruh tubuh. Sejumlah studi epidemiologi menemukan kaitan antara periodontitis dan peningkatan risiko penyakit kardiovaskular. Para ahli menekankan bahwa menjaga gusi tetap sehat adalah bagian penting dari pola hidup sehat secara menyeluruh — meski kaitan ini belum tentu bersifat sebab-akibat langsung.</p>
+
+            <h3 class="art-sub">Apa yang dikatakan penelitian?</h3>
+            <p>Periodontitis dimulai dari penumpukan plak yang memicu peradangan pada jaringan penyangga gigi. Peradangan kronis ini melepaskan zat-zat tertentu yang dapat ikut beredar dalam darah dan memperberat peradangan di pembuluh darah. Beberapa studi berskala besar menemukan bahwa orang dengan penyakit gusi lanjut cenderung memiliki risiko penyakit jantung yang lebih tinggi dibanding mereka yang gusinya sehat.</p>
+
+            <h3 class="art-sub">Apakah gusi sehat otomatis melindungi jantung?</h3>
+            <p>Belum tentu. Penyakit gusi dan penyakit jantung berbagi sejumlah faktor risiko yang sama — misalnya merokok, diabetes, dan pola makan tinggi gula. Artinya, hubungan yang terlihat bisa sebagian dipengaruhi faktor-faktor tersebut. Meski begitu, mengendalikan peradangan di rongga mulut tetap masuk akal sebagai bagian dari menjaga kesehatan tubuh secara keseluruhan.</p>
+
+            <h3 class="art-sub">Langkah sederhana yang bisa dilakukan</h3>
+            <ul class="art-list">
+              <li><strong>Sikat gigi dua kali sehari</strong> dan bersihkan sela gigi dengan benang gigi secara rutin.</li>
+              <li><strong>Lakukan kontrol dan pembersihan karang gigi</strong> setiap enam bulan di dokter gigi.</li>
+              <li><strong>Informasikan riwayat jantung dan obat-obatan</strong> (misalnya pengencer darah) sebelum menjalani tindakan gigi.</li>
+              <li><strong>Jangan menunda penanganan gusi berdarah, bengkak, atau gigi goyang.</strong></li>
+            </ul>
+
+            <p>Jika Anda memiliki penyakit jantung, diabetes, atau kondisi medis lain, sampaikan kepada dokter gigi. Perawatan gigi yang aman justru dimulai dari komunikasi riwayat kesehatan yang terbuka.</p>
+          </div>
+
+          <div class="blog-ref">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+            <span>Referensi: <strong>American Heart Association &amp; British Dental Journal</strong> — tinjauan kaitan periodontitis dan penyakit jantung.</span>
+          </div>
+        </article>
+
+        <!-- Artikel 3 -->
+        <article class="blog-article" id="fakta-enamel">
+          <header class="art-head">
+            <span class="chip chip-outline">Tahukah Anda</span>
+            <h2 class="art-title">5 Fakta Menarik tentang Enamel Gigi yang Jarang Diketahui</h2>
+            <p class="art-meta"><span>Diperbarui 3 Agustus 2026</span><span class="meta-sep">·</span><span>4 menit baca</span><span class="meta-sep">·</span><span>Tim Pals Dental</span></p>
+          </header>
+
+          <div class="art-body">
+            <p>Enamel adalah jaringan paling keras dalam tubuh manusia karena kandungan mineralnya mencapai sekitar 96 persen. Namun, enamel tidak memiliki sel hidup sehingga tidak dapat memperbaiki diri sendiri saat rusak. Perbaikannya hanya bisa terjadi lewat proses remineralisasi — misalnya dibantu paparan fluoride — itulah mengapa pencegahan sangat menentukan.</p>
+
+            <h3 class="art-sub">Lima fakta yang perlu Anda tahu</h3>
+            <ul class="art-list">
+              <li><strong>Enamel adalah zat terkeras di tubuh</strong> — kandungan mineralnya mencapai sekitar 96 persen, bahkan lebih keras dari tulang.</li>
+              <li><strong>Ia tidak memiliki sel hidup.</strong> Berbeda dengan tulang, enamel tidak bisa memperbaiki diri ketika sudah terbentuk retakan atau lubang.</li>
+              <li><strong>Kerusakan dini masih bisa "dipulihkan".</strong> Mineral dari air liur dan fluoride membantu enamel mengeras kembali lewat remineralisasi — itulah gunanya pasta gigi berfluoride.</li>
+              <li><strong>Ketebalannya tidak merata.</strong> Enamel paling tebal di puncak gigi geraham (± 2,5 mm) dan semakin tipis mendekati gusi, sehingga daerah dekat gusi lebih rentan.</li>
+              <li><strong>Saat enamel menipis, gigi menjadi sensitif.</strong> Lapisan di bawahnya (dentin) mengandung saraf — itulah sebabnya ngilu muncul saat makan dingin atau manis.</li>
+            </ul>
+
+            <p>Karena enamel tidak dapat tumbuh kembali, begitu lubang terbentuk, perbaikannya harus dilakukan dokter gigi. Menyikat dengan benar, membatasi makanan manis, dan kontrol rutin adalah investasi terkecil untuk melindungi lapisan terkeras — sekaligus paling "berharga" — di tubuh Anda.</p>
+          </div>
+
+          <div class="blog-ref">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+            <span>Referensi: <strong>International Journal of Dentistry</strong> — kajian struktur dan kekuatan enamel gigi manusia.</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ============================= NAVIGASI BAWAH ARTIKEL ============================= -->
+      <div class="blog-foot">
+        <div class="blog-foot-nav">
+          <a class="btn btn-ghost" href="index.html#beranda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            Kembali ke Beranda
+          </a>
+          <a class="btn btn-primary" href="index.html#kontak">Buat Janji Temu</a>
+        </div>
+        <p class="blog-foot-note">Artikel di halaman ini bersifat edukatif dan bukan pengganti konsultasi langsung dengan dokter gigi.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="index.html">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 -960 960 960" fill="currentColor">
+                <path d="M680-875q66 0 113 47t47 113q0 11-1.5 29.5T834-643l-55 403q-5 38-34.5 62T677-154q-23 0-42.5-10T602-192L495-348q-2-4-6.5-5.5T479-355q-4 0-16 9L359-195q-14 20-34.5 30.5T281-154q-38 0-67-24.5T180-241l-54-402q-3-24-4.5-42.5T120-715q0-66 47-113t113-47q36 0 57.5 9.5T379-845q20 11 42.5 20.5T480-815q36 0 58.5-9.5T581-845q20-11 42-20.5t57-9.5Zm0 80q-23 0-40.5 9.5T601-765q-21 11-49 20.5t-72 9.5q-44 0-72-9.5T359-765q-21-11-38.5-20.5T280-795q-33 0-56.5 23.5T200-715q0 8 1 23t4 35l55 405q1 8 7 12.5t14 4.5q5 0 9-2t6-6l101-148q14-20 36-32t47-12q25 0 47 12t36 32l103 151q2 3 5 4.5t7 1.5q8 0 14.5-4.5T700-251l55-406q3-20 4-35t1-23q0-33-23.5-56.5T680-795ZM480-515Z"/>
+              </svg>
+            </span>
+            <span class="brand-text">Pals<span>Dental</span></span>
+          </a>
+          <p class="footer-about">Klinik kesehatan gigi dengan pendekatan modern, steril, dan edukatif — agar setiap kunjungan terasa aman dan nyaman.</p>
+          <div class="socials" aria-label="Media sosial">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 -960 960 960" fill="currentColor"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 -960 960 960" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 -960 960 960" fill="currentColor"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a>
+            <a href="#" aria-label="X (Twitter)"><svg viewBox="0 -960 960 960" fill="currentColor"><path d="m4 4 16 16M20 4 4 20"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul class="footer-links">
+            <li>Jl. Melati No. 12, Kebayoran Baru</li>
+            <li>Jakarta Selatan 12130</li>
+            <li><a href="tel:+622155501234">(021) 5550-1234</a></li>
+            <li><a href="mailto:halo@palsdental.id">halo@palsdental.id</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Jam Operasional</h4>
+          <ul class="footer-hours">
+            <li><span>Senin – Jumat</span><span>08.00 – 20.00</span></li>
+            <li><span>Sabtu</span><span>08.00 – 17.00</span></li>
+            <li><span>Minggu &amp; hari libur</span><span>Tutup</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#tentang">Tentang</a></li>
+            <li><a href="index.html#dokter">Dokter</a></li>
+            <li><a href="index.html#fasilitas">Fasilitas</a></li>
+            <li><a href="blog.html">Blog Kesehatan</a></li>
+            <li><a href="index.html#kontak">Buat Janji Temu</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Pals Dental. Seluruh hak cipta dilindungi.</p>
+        <p>Informasi di situs ini bersifat edukatif dan bukan pengganti konsultasi dokter.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
